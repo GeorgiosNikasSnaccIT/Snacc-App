@@ -1,16 +1,13 @@
 # snaccit_login
 
-A new Flutter project.
+Flutter Login Page for snacc-it dev instance.
 
-## Getting Started
+## Included Widgets
 
-This project is a starting point for a Flutter application.
+- Main: Call Login Form or Home Page. If there is basic authentication data in secure storage -> Home Page, if not -> Login Form.
+- SnaccITLoginForm: Call get method with email/address using REST API endpoint /checkLogin and 
+if authorization success store basic authentication data in secure storage.
+- ExpenseHome: A button to logout, if it is clicked, the stored basic authentication data would be deleted and go back to login form.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+For the information of flutter secure storage plugin, here is a short introduction:
+[online documentation](https://newbiecoders.hashnode.dev/using-secure-storage-in-flutter)
